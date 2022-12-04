@@ -2,7 +2,7 @@
 def load_inventory(fname):
     inventory = [0]
     with open(fname) as strm:
-        if not fname:
+        if not strm:
             return []
         for line in strm:
             if line == '\n':
